@@ -32,7 +32,8 @@ app.use(
     saveUninitialized: true,
     store: store,
     cookie: {
-      secure: "auto",
+      secure: "auto", // Aktifkan untuk HTTPS
+      sameSite: "none", // Dukung cookie lintas-origin
     },
   })
 );
