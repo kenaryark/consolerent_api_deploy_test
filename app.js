@@ -21,9 +21,9 @@ const store = new sessionStore({
   db: db,
 });
 
-// (async()=>{
-//     await db.sync();
-// })();
+(async () => {
+  await db.sync();
+})();
 
 app.use(
   session({
@@ -50,6 +50,6 @@ app.use(express.static("public"));
 
 app.use("/api", router);
 
-// store.sync();
+store.sync();
 
 export default app;
