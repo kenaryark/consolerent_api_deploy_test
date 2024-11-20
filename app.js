@@ -40,7 +40,7 @@ app.use(
 app.use(
   cors({
     credentials: true,
-    origin: "https://consolerentfrontendtestdeploy-production.up.railway.app/",
+    origin: "https://consolerent-test.netlify.app",
   })
 );
 app.use(cookieParser());
