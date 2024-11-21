@@ -41,7 +41,8 @@ app.use(
   cors({
     credentials: true,
     // origin: "*",
-    origin: "https://consolerent-test.netlify.app",
+    // origin: "https://consolerent-test.netlify.app",
+    origin: "http://localhost:3000/",
   })
 );
 app.use(cookieParser());
