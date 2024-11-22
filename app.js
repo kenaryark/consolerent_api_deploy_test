@@ -33,7 +33,7 @@ app.use(
     saveUninitialized: true,
     store: store,
     cookie: {
-      secure: "auto", // Aktifkan untuk HTTPS
+      secure: "true", // Aktifkan untuk HTTPS
       // secure: "false",
       sameSite: "none", // Dukung cookie lintas-origin
     },
