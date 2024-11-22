@@ -33,11 +33,13 @@ app.use(
     saveUninitialized: true,
     store: store,
     cookie: {
+      expires: new Date(Date.now() + 86400000),
+      maxAge: 30 * 24 * 60 * 60 * 1000,
       domain: "https://consolerent-test.netlify.app",
       httpOnly: true,
       secure: "true", // Aktifkan untuk HTTPS
       // secure: "false",
-      sameSite: "None", // Dukung cookie lintas-origin
+      sameSite: "Lax", // Dukung cookie lintas-origin
     },
   })
 );
