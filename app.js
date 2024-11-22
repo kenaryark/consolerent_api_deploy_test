@@ -27,13 +27,14 @@ const store = new sessionStore({
 
 app.use(
   session({
-    secret: process.env.SESS_SECRET,
+    // secret: process.env.SESS_SECRET,
+    secret: blablabla20202020,
     resave: false,
     saveUninitialized: true,
     store: store,
     cookie: {
-      // secure: "auto", // Aktifkan untuk HTTPS
-      secure: "false",
+      secure: "auto", // Aktifkan untuk HTTPS
+      // secure: "false",
       sameSite: "none", // Dukung cookie lintas-origin
     },
   })
@@ -42,8 +43,8 @@ app.use(
   cors({
     credentials: true,
     // origin: "*",
-    // origin: "https://consolerent-test.netlify.app",
-    origin: "http://localhost:5173",
+    origin: "https://consolerent-test.netlify.app",
+    // origin: "http://localhost:5173",
   })
 );
 app.use(cookieParser());
