@@ -39,7 +39,7 @@ app.use(
       httpOnly: true,
       secure: "true", // Aktifkan untuk HTTPS
       // secure: "false",
-      sameSite: "Lax", // Dukung cookie lintas-origin
+      sameSite: "none", // Dukung cookie lintas-origin
     },
   })
 );
