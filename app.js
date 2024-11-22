@@ -37,7 +37,7 @@ app.use(
       maxAge: 30 * 24 * 60 * 60 * 1000,
       domain: "https://consolerent-test.netlify.app",
       httpOnly: true,
-      secure: "true", // Aktifkan untuk HTTPS
+      secure: true, // Aktifkan untuk HTTPS
       // secure: "false",
       sameSite: "none", // Dukung cookie lintas-origin
     },
