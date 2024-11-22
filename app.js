@@ -28,7 +28,7 @@ const store = new sessionStore({
 app.use(
   session({
     // secret: process.env.SESS_SECRET,
-    secret: blablabla20202020,
+    secret: "blablabla20202020",
     resave: false,
     saveUninitialized: true,
     store: store,
