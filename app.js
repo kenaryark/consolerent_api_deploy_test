@@ -43,8 +43,8 @@ app.use(
   cors({
     credentials: true,
     // origin: "*",
-    // origin: "https://consolerent-test.netlify.app",
-    origin: "https://midtrans-test-ken.netlify.app",
+    origin: "https://consolerent-test.netlify.app",
+    // origin: "https://midtrans-test-ken.netlify.app",
   })
 );
 app.use(cookieParser());
