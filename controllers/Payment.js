@@ -5,7 +5,8 @@ export const Payment = async (req, res) => {
     console.log("Incoming Request:", req.body); // Debug input
     const snap = new midtransClient.Snap({
       isProduction: false,
-      serverKey: process.env.MIDTRANS_SERVER_KEY,
+      // serverKey: process.env.MIDTRANS_SERVER_KEY,
+      serverKey: "SB-Mid-server-xXoMAtBLKGUd-KdHrz2C8emj",
     });
 
     const parameter = {
