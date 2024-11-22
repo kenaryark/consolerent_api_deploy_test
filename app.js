@@ -33,9 +33,11 @@ app.use(
     saveUninitialized: true,
     store: store,
     cookie: {
+      domain: "https://consolerent-test.netlify.app",
+      httpOnly: true,
       secure: "true", // Aktifkan untuk HTTPS
       // secure: "false",
-      sameSite: "none", // Dukung cookie lintas-origin
+      sameSite: "None", // Dukung cookie lintas-origin
     },
   })
 );
